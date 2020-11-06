@@ -22,3 +22,4 @@ source ${MY_DIR}/scripts/cask-applications.sh
 source ${MY_DIR}/scripts/git-config.sh
 source ${MY_DIR}/scripts/macos-config.sh
 source ${MY_DIR}/scripts/macos-dock.sh
+source ${MY_DIR}/scripts/finish.sh
