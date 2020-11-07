@@ -1,5 +1,7 @@
 echo
 
+sudo xcode-select --install
+
 if hash brew 2>/dev/null; then
   echo "Homebrew is already installed!"
 else
