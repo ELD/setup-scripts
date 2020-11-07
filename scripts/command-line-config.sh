@@ -8,6 +8,8 @@ brew install ykman
 brew install ykpers
 brew install hopenpgp-tools
 
+source ~/.bashrc
+
 echo
 echo "Copying GPG config"
 cp -f files/gpg.conf ~/.gnupg/gpg.conf
@@ -24,6 +26,7 @@ gpgconf --kill gpg-agent
 
 echo
 echo "Configuring zsh with prezto"
+brew install zsh
 rm -rf "${HOME}/.zprezto"
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
@@ -44,10 +47,7 @@ cp -f files/zpreztorc ~/.zpreztorc
 cp -f files/zprofile ~/.zprofile
 cp -f files/zshrc ~/.zshrc
 cp -f files/aliases.zsh ~/.aliases.zsh
-
-echo "GPG Key required to decrypt config.zsh.gpg"
-gpg --recv 0x8973748FFF9B634F
-gpg --decrypt --armor --output ~/.config.zsh files/config.zsh.gpg
+cp -f files/config.zsh ~/.config.zsh
 
 echo
 echo "Setting zsh as the default shell"
@@ -55,3 +55,7 @@ if [[ ! $(grep '/usr/local/bin/zsh' /etc/shells) ]]; then
   sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
 fi
 chsh -s /usr/local/bin/zsh
+
+echo
+echo "Sourcing new config"
+source ~/.zshrc

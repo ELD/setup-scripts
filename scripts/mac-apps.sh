@@ -4,6 +4,8 @@ echo
 echo "Installing Mac Apps"
 echo
 
+brew install mas
+
 # ------- Big Chonker -------
 mas install 497799835 # Xcode
 
