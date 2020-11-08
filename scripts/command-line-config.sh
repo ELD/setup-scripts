@@ -4,6 +4,7 @@ brew cask install gpg-suite-nightly
 brew cask install veracrypt
 
 brew install pinentry
+brew install pinentry-mac
 brew install ykman
 brew install ykpers
 brew install hopenpgp-tools
