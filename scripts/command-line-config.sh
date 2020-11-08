@@ -1,6 +1,6 @@
 echo
 echo "Installing and configuring GPG"
-brew cask install gpg-suite
+brew cask install gpg-suite-nightly
 brew cask install veracrypt
 
 brew install pinentry
