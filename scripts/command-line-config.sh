@@ -8,8 +8,6 @@ brew install ykman
 brew install ykpers
 brew install hopenpgp-tools
 
-source ~/.bashrc
-
 echo
 echo "Copying GPG config"
 cp -f files/gpg.conf ~/.gnupg/gpg.conf
@@ -19,10 +17,6 @@ echo
 echo "Fetching the public key for the smart card"
 echo "Type 'fetch' then 'quit' in the GPG prompt"
 gpg --card-edit
-
-echo
-echo "Killing gpg-agent to pick up config"
-gpgconf --kill gpg-agent
 
 echo
 echo "Configuring zsh with prezto"
