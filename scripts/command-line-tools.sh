@@ -47,8 +47,6 @@ brew install youtube-dl
 echo
 echo "Installing (N)Vim configuration"
 echo
-pip3 install neovim
-gem install neovim
 
 if [ ! -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
     echo
