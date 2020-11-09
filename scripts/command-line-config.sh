@@ -50,7 +50,3 @@ if [[ ! $(grep '/usr/local/bin/zsh' /etc/shells) ]]; then
   sudo sh -c 'echo /usr/local/bin/zsh >> /etc/shells'
 fi
 chsh -s /usr/local/bin/zsh
-
-echo
-echo "Sourcing new config"
-source ~/.zshrc

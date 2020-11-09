@@ -16,8 +16,8 @@ clear
 MY_DIR="$(dirname "$0")"
 source ${MY_DIR}/scripts/setup-homebrew.sh
 source ${MY_DIR}/scripts/mac-apps.sh
-source ${MY_DIR}/scripts/command-line-config.sh
 source ${MY_DIR}/scripts/command-line-tools.sh
+source ${MY_DIR}/scripts/command-line-config.sh
 source ${MY_DIR}/scripts/cask-applications.sh
 source ${MY_DIR}/scripts/git-config.sh
 source ${MY_DIR}/scripts/macos-config.sh
