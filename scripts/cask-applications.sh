@@ -1,11 +1,6 @@
 set +e
 
 echo
-echo "Accepting Xcode License"
-echo
-sudo xcodebuild -license accept
-
-echo
 echo "Installing applications"
 
 # Auth
