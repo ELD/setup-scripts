@@ -17,7 +17,7 @@ cp -f files/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 echo
 echo "Fetching the public key for the smart card"
 echo "Type 'fetch' then 'quit' in the GPG prompt"
-gpg --card-edit
+gpg --card-edit || true
 
 echo
 echo "Configuring zsh with prezto"
