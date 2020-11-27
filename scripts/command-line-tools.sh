@@ -1,6 +1,7 @@
 echo
 echo "Installing and configuring command line utilities"
 
+brew install bandwhich
 brew install bash
 brew install bat
 brew install boost
@@ -15,6 +16,8 @@ brew install exercism
 brew install fd
 brew install fonttools
 brew install go
+brew install grex
+brew install hyperfine
 brew install jq
 brew install kubernetes-helm
 brew install kustomize
@@ -27,22 +30,28 @@ brew install neovim
 brew install node
 brew install pgcli
 brew install postgresql
+brew install procs
 brew install python
 brew install ripgrep
 brew install ruby
 brew install rustup-init
 brew install sccache
+brew install sd
 brew install speedtest-cli
 brew install sqlite
 brew install starship
+brew install tealdeer
 brew install terraform
 brew install tmux
+brew install tokei
 brew install vim
 brew install watch
 brew install wget
 brew install wrk
 brew install yarn
 brew install youtube-dl
+brew install ytop
+brew install zoxide
 
 echo
 echo "Installing (N)Vim configuration"
@@ -72,3 +81,6 @@ fi
 echo
 echo "Installing Rust nightly toolchain"
 rustup-init -y --no-modify-path --default-toolchain nightly
+
+cargo install cargo-expand
+cargo install cargo-sweep
